@@ -1,3 +1,23 @@
+
+
+'''
+------------------------------------------------------------
+Approach 1 : Random String Generation Method
+
+Approach 2 : Random String Generation using LongURL MD5
+
+Approach 3 : Check DB for collisions
+
+Approach 4 : 
+    - lets keep counter + 
+    - zookeeper service +
+    - base62 encoding
+
+-------------------------------------------------------------
+
+'''
+
+
 lets design a database :
 
 attributes 
