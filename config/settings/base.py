@@ -106,6 +106,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Static files configuration
 STATIC_URL = 'static/'
+STATIC_ROOT = '/home/short/url_shortner/staticfiles/'
+
 
 # STATICFILES_DIRS = [
 #     BASE_DIR / 'static',
