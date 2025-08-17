@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>URL Shortner</title>
+  <link rel="icon" type="image/svg+xml" href="https://cdn.simpleicons.org/django/092E20">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+        background-color: #555; /* Light grey background */
+    }
+
+    a {
+      text-decoration: none; /* Remove underline from all links */
+  }
+
+
+  </style>
+</head>
+
+<body>
+  {% include 'sidebar.html' %}
+  {% include 'smallscreen.html' %}
+
+   
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+    {% block content %}
+
+    
+
+    {% endblock %}
+  </div>
+  <script>
+
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+  </script>
+
+</body>
+</html>
+
