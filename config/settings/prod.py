@@ -3,7 +3,7 @@ import dj_database_url
 from decouple import config
 
 DEBUG = False
-ALLOWED_HOSTS = ['short.pythonanywhere.com']
+ALLOWED_HOSTS = ['short.pythonanywhere.com', 'url-shortner-1kv5.onrender.com']
 
 
 DATABASES = {
